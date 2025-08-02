@@ -81,6 +81,7 @@
       border: 2px solid rgba(255,255,255,0.2);
       box-shadow: 0 0 20px rgba(255,255,255,0.2);
       border-radius: 0.5rem;
+      z-index: 10;
     }
 
     /* نص يمين عمودي */
@@ -97,6 +98,8 @@
       text-transform: uppercase;
       user-select: none;
       white-space: nowrap;
+      z-index: 15;
+      color: #fff;
     }
 
     /* نص يسار عمودي */
@@ -113,6 +116,8 @@
       text-transform: uppercase;
       user-select: none;
       white-space: nowrap;
+      z-index: 15;
+      color: #fff;
     }
 
     /* نص تحت الصورة */
@@ -127,6 +132,7 @@
       align-items: center;
       gap: 0.2rem;
       margin-top: 0.5rem;
+      z-index: 15;
     }
 
     .caption a {
@@ -156,13 +162,56 @@
     .enter-wrapper:hover {
       color: rgba(255, 255, 255, 0.8); /* أبيض أقل شفافية عند المرور */
     }
+
+    /* نص كبير أفقي يمين الصورة (AM) */
+    .horizontal-right {
+      position: fixed;
+      top: 50%;
+      right: 10vw;  /* تحريك 5% أكثر */
+      transform: translateY(-50%);
+      font-weight: 900;
+      font-size: 12rem;
+      color: #fff;
+      user-select: none;
+      pointer-events: none;
+      font-family: 'Orbitron', monospace;
+      letter-spacing: 0.3rem;
+      white-space: nowrap;
+      z-index: 20;
+      text-shadow:
+        0 0 3px #fff,
+        0 0 6px #fff,
+        0 0 10px #fff;
+    }
+
+    /* نص كبير أفقي يسار الصورة (S6) */
+    .horizontal-left {
+      position: fixed;
+      top: 50%;
+      left: 10vw; /* تحريك 5% أكثر */
+      transform: translateY(-50%);
+      font-weight: 900;
+      font-size: 12rem;
+      color: #fff;
+      user-select: none;
+      pointer-events: none;
+      font-family: 'Orbitron', monospace;
+      letter-spacing: 0.3rem;
+      white-space: nowrap;
+      z-index: 20;
+      text-shadow:
+        0 0 3px #fff,
+        0 0 6px #fff,
+        0 0 10px #fff;
+    }
+
   </style>
 </head>
 <body>
 
 <div class="loading-screen">
   <div class="glitch-text">
-    Preparing to be R ..<br>discord.gg/TdA8sh خش عشان ماتتلكم
+    Dr.Fire COme To FuCK Your Mom Pussy ..<br>discord.gg/TdA8sh خش عشان ماتتلكم
   </div>
 </div>
 
@@ -190,8 +239,12 @@
   RUnRunRUnRUnRUnRUnRUnRUnRUn
 </div>
 
-<audio id="bg-music" autoplay loop>
-  <source src="https://trjjjjjj.github.io/FINAL/aabyd-arkam-dragonfiremp3-ahmet-soundloadmatecom_IRSWqbeV.mp3" type="audio/mpeg">
+<!-- النصوص الكبيرة الجانبية -->
+<div class="horizontal-left">S6</div>
+<div class="horizontal-right">AM</div>
+
+<audio id="bg-music" loop>
+  <source src="https://trjjjjjj.github.io/FINAL/aabyd-arkam-dragonfiremp3-ahmet-soundloadmatecom_IRSWqbeV.mp3" type="audio/mpeg" />
 </audio>
 
 <script>
@@ -203,4 +256,4 @@
 </script>
 
 </body>
-  
+</html>
