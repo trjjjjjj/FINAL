@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PHANTOM ACCESS</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #000;
+      color: #fff;
+      font-family: 'Orbitron', monospace;
+      overflow: hidden;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      flex-direction: column;
+    }
+
+    .loading-screen {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      background: #000;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      animation: fadeOut 0s ease-in-out 5s forwards;
+    }
+
+    .glitch-text {
+      color: #fff;
+      font-size: 2rem;
+      font-weight: 700;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.15rem;
+      line-height: 1.6;
+    }
+
+    @keyframes fadeOut {
+      to {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+
+    .main-content {
+      opacity: 0;
+      animation: fadeIn 1s ease-in-out 5s forwards;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    .image-box img {
+      max-width: 90vw;
+      max-height: 90vh;
+      border: 2px solid rgba(255,255,255,0.2);
+      box-shadow: 0 0 20px rgba(255,255,255,0.2);
+      border-radius: 0.5rem;
+    }
+
+    /* نص يمين عمودي */
+    .right-text {
+      position: fixed;
+      top: 50%;
+      right: 1rem;
+      transform: translateY(-50%);
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      font-weight: 700;
+      font-size: 1.25rem;
+      letter-spacing: 0.15rem;
+      text-transform: uppercase;
+      user-select: none;
+      white-space: nowrap;
+    }
+
+    /* نص يسار عمودي */
+    .left-text {
+      position: fixed;
+      top: 50%;
+      left: 1rem;
+      transform: translateY(-50%);
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      font-weight: 700;
+      font-size: 1.25rem;
+      letter-spacing: 0.15rem;
+      text-transform: uppercase;
+      user-select: none;
+      white-space: nowrap;
+    }
+
+    /* نص تحت الصورة */
+    .caption {
+      text-align: center;
+      font-size: 1.1rem;
+      letter-spacing: 0.05rem;
+      user-select: none;
+      color: #ccc;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.2rem;
+      margin-top: 0.5rem;
+    }
+
+    .caption a {
+      color: #0af;
+      text-decoration: none;
+      font-weight: 900; /* عريض جداً */
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      font-size: 1.1rem;
+    }
+
+    .caption a:hover {
+      text-decoration: underline;
+    }
+
+    .enter-wrapper {
+      font-style: italic;
+      font-size: 1rem;
+      color: rgba(255, 255, 255, 0.5); /* أبيض شفاف */
+      font-weight: 600;
+      user-select: none;
+      margin-top: 4px;
+      transition: color 0.3s ease;
+    }
+
+    .enter-wrapper:hover {
+      color: rgba(255, 255, 255, 0.8); /* أبيض أقل شفافية عند المرور */
+    }
+  </style>
+</head>
+<body>
+
+<div class="loading-screen">
+  <div class="glitch-text">
+    Preparing to be R ..<br>discord.gg/TdA8sh خش عشان ماتتلكم
+  </div>
+</div>
+
+<div class="main-content">
+  <div class="image-box">
+    <img src="https://i.ibb.co/xSV5dnvt/a890a30a8d0f6f3f3bc45fa247eb2109.jpg" alt="main image" />
+  </div>
+  <div class="caption">
+    Be happy because you are fucked from hell
+    <br />
+    <a href="https://discord.gg/TdA8sh" target="_blank" rel="noopener noreferrer">
+      discord.gg/تداقش؟
+    </a>
+    <div class="enter-wrapper">
+      تبي تشوف كيف انفتحت؟ ^^
+    </div>
+  </div>
+</div>
+
+<div class="right-text">
+  YouR NightMARe IS CoMing )))&gt;&gt;
+</div>
+
+<div class="left-text">
+  RUnRunRUnRUnRUnRUnRUnRUnRUn
+</div>
+
+<audio id="bg-music" autoplay loop>
+  <source src="https://trjjjjjj.github.io/FINAL/aabyd-arkam-dragonfiremp3-ahmet-soundloadmatecom_IRSWqbeV.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<script>
+  window.addEventListener('load', function () {
+    setTimeout(() => {
+      document.querySelector('.loading-screen').style.display = 'none';
+    }, 5000);
+  });
+</script>
+
+</body>
+</html>
